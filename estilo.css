@@ -1,0 +1,133 @@
+/* Fondo de la página */
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+/* Tarjeta principal */
+.radio {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+
+    /* Imagen a la izquierda y contenido a la derecha */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Columna izquierda: imagen */
+.imagen-radio {
+    flex: 0 0 38%;
+    min-width: 0;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Columna derecha: textos y reproductor */
+.contenido-radio {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #1976d2;
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+/* Descripción */
+.descripcion {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+/* Separador */
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Reproductor */
+.reproductor {
+    width: 100%;
+    min-width: 0;
+}
+
+.reproductor h2 {
+    color: #1976d2;
+    font-size: 20px;
+    margin: 0 0 18px;
+}
+
+/* Evita que el reproductor desborde la tarjeta */
+.cstrEmbed {
+    max-width: 100%;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #eeeeee;
+}
+
+footer p {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Adaptación para teléfonos y pantallas pequeñas */
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .radio {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .imagen-radio {
+        flex: none;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido-radio {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .reproductor h2 {
+        font-size: 19px;
+    }
+}
