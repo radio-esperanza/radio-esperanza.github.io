@@ -1,68 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Radio Esperanza</title>
-
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-    <main class="radio">
+    <div class="pagina">
 
-        <div class="imagen-radio">
-            <img
-                src="radio-esperanza.png"
-                alt="Radio Esperanza"
-                class="logo"
-            >
-        </div>
+        <main class="radio">
 
-        <div class="contenido-radio">
+            <div class="imagen-radio">
+                <img src="radio-esperanza.png" alt="Radio Esperanza" class="logo">
+            </div>
 
-            <h1>Radio Esperanza</h1>
+            <div class="contenido-radio">
 
-            <p class="descripcion">
-                Una voz de esperanza para tu vida
-            </p>
+                <h1>Radio Esperanza</h1>
 
-            <hr>
-
-            <section class="reproductor">
-
-                <h2>🎵 Escúchanos en vivo</h2>
-
-                <div
-                    data-type="newStreamPlayer"
-                    data-publicToken="a053da18-01e2-44ce-ae27-fffcfc7bdf9b"
-                    data-theme="light"
-                    data-color="2196f3"
-                    data-channelId=""
-                    data-rendered="false"
-                    class="cstrEmbed"
-                >
-                    <a href="https://www.caster.fm">Shoutcast Hosting</a>
-                    <a href="https://www.caster.fm">Stream Hosting</a>
-                    <a href="https://www.caster.fm">Radio Server Hosting</a>
-                </div>
-
-                <script src="https://cdn.cloud.caster.fm/widgets/embed.js"></script>
-
-            </section>
-
-            <footer>
-                <p>
-                    © 2026 Radio-Esperanza-966.
-                    Todos los derechos reservados.
+                <p class="descripcion">
+                    Una voz de esperanza para tu vida
                 </p>
-            </footer>
 
+                <hr>
+
+                <section class="reproductor">
+
+                    <div class="player">
+
+                        <div class="player-cabecera">
+                            <span class="player-nombre">RADIO ESPERANZA</span>
+                            <span class="player-en-vivo">● EN VIVO</span>
+                        </div>
+
+                        <audio controls preload="none">
+                            <source src="https://morcast.caster.fm:12990/7Qsq8?token=d385394e4b8e970b20f5c3ed74074cba" type="audio/mpeg">
+                            Tu navegador no admite audio HTML5.
+                        </audio>
+
+                        <p class="player-frase">
+                            Una voz de esperanza para tu vida
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <footer>
+                    <p>
+                        © 2026 Radio Esperanza.
+                        Todos los derechos reservados.
+                    </p>
+                </footer>
+
+            </div>
+
+        </main>
+
+        <div class="homenaje">
+            <span>♥</span>
+            <h3>En memoria de</h3>
+            <h2>Urbano Carraman Ayala</h2>
+            <p>2 de octubre de 1966 — 15 de enero de 2026</p>
+            <small>Tu recuerdo vivirá siempre en mí corazon.</small>
         </div>
 
-    </main>
+    </div>
 
 </body>
 </html>
