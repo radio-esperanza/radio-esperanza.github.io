@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Radio Esperanza</title>
+
     <link rel="stylesheet" href="estilo.css">
 </head>
 
@@ -15,7 +17,11 @@
         <main class="radio">
 
             <div class="imagen-radio">
-                <img src="radio-esperanza.png" alt="Radio Esperanza" class="logo">
+                <img
+                    src="radio-esperanza.png"
+                    alt="Radio Esperanza"
+                    class="logo"
+                >
             </div>
 
             <div class="contenido-radio">
@@ -30,23 +36,23 @@
 
                 <section class="reproductor">
 
-                    <div class="player">
+                    <h2>Escúchanos en vivo</h2>
 
-                        <div class="player-cabecera">
-                            <span class="player-nombre">RADIO ESPERANZA</span>
-                            <span class="player-en-vivo">● EN VIVO</span>
-                        </div>
-
-                        <audio controls preload="none">
-                            <source src="https://morcast.caster.fm:12990/7Qsq8?token=d385394e4b8e970b20f5c3ed74074cba" type="audio/mpeg">
-                            Tu navegador no admite audio HTML5.
-                        </audio>
-
-                        <p class="player-frase">
-                            Una voz de esperanza para tu vida
-                        </p>
-
+                    <div
+                        data-type="newStreamPlayer"
+                        data-publicToken="a053da18-01e2-44ce-ae27-fffcfc7bdf9b"
+                        data-theme="light"
+                        data-color="e81e4d"
+                        data-channelId=""
+                        data-rendered="false"
+                        class="cstrEmbed"
+                    >
+                        <a href="https://www.caster.fm">Shoutcast Hosting</a>
+                        <a href="https://www.caster.fm">Stream Hosting</a>
+                        <a href="https://www.caster.fm">Radio Server Hosting</a>
                     </div>
+
+                    <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
 
                 </section>
 
@@ -62,11 +68,17 @@
         </main>
 
         <div class="homenaje">
+
             <span>♥</span>
+
             <h3>En memoria de</h3>
+
             <h2>Urbano Carraman Ayala</h2>
+
             <p>2 de octubre de 1966 — 15 de enero de 2026</p>
-            <small>Tu recuerdo vivirá siempre en mí corazon.</small>
+
+            <small>Tu recuerdo vivirá siempre en mi corazon.</small>
+
         </div>
 
     </div>
